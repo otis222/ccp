@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <style>
+      .label{font-family:Arial,Helvetica,sans-serif;font-size:17px;fill:#202020}
+      .small{font-family:Arial,Helvetica,sans-serif;font-size:14px;fill:#202020}
+      .pin{fill:#202020}
+      .wire{fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .thin{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="680" fill="#f0f0f0"/>
+
+  <!-- Breadboard -->
+  <rect x="48" y="72" width="520" height="536" rx="16" fill="#fbfbfb" stroke="#d9d9d9" stroke-width="2"/>
+  <line x1="82" y1="126" x2="532" y2="126" stroke="#ffb4b4" stroke-width="8"/>
+  <line x1="82" y1="166" x2="532" y2="166" stroke="#b6c8ff" stroke-width="8"/>
+  <text x="60" y="132" class="label" fill="#d50000">+</text>
+  <text x="60" y="172" class="label" fill="#111">-</text>
+  <line x1="82" y1="340" x2="532" y2="340" stroke="#e2e2e2" stroke-width="14"/>
+
+  <!-- Breadboard holes, sparse and positional -->
+  <g fill="#777">
+    <circle cx="112" cy="126" r="5"/><circle cx="152" cy="126" r="5"/><circle cx="192" cy="126" r="5"/><circle cx="232" cy="126" r="5"/><circle cx="272" cy="126" r="5"/><circle cx="312" cy="126" r="5"/><circle cx="352" cy="126" r="5"/><circle cx="392" cy="126" r="5"/><circle cx="432" cy="126" r="5"/><circle cx="472" cy="126" r="5"/><circle cx="512" cy="126" r="5"/>
+    <circle cx="112" cy="166" r="5"/><circle cx="152" cy="166" r="5"/><circle cx="192" cy="166" r="5"/><circle cx="232" cy="166" r="5"/><circle cx="272" cy="166" r="5"/><circle cx="312" cy="166" r="5"/><circle cx="352" cy="166" r="5"/><circle cx="392" cy="166" r="5"/><circle cx="432" cy="166" r="5"/><circle cx="472" cy="166" r="5"/><circle cx="512" cy="166" r="5"/>
+  </g>
+
+  <!-- Arduino Uno simplified -->
+  <rect x="650" y="72" width="500" height="536" rx="22" fill="#2376a5" stroke="#155276" stroke-width="3"/>
+  <text x="842" y="330" font-family="Arial,Helvetica,sans-serif" font-size="58" fill="#ffffff" text-anchor="middle">UNO</text>
+  <rect x="812" y="101" width="310" height="36" fill="#2d2d2d"/>
+  <rect x="724" y="492" width="180" height="44" fill="#2d2d2d"/>
+  <rect x="932" y="492" width="170" height="44" fill="#2d2d2d"/>
+
+  <!-- Arduino pin locations used by the wiring -->
+  <circle cx="864" cy="119" r="7" class="pin"/><text x="864" y="92" class="label" text-anchor="middle" fill="#fff">D9</text>
+  <circle cx="1040" cy="119" r="7" class="pin"/><text x="1040" y="92" class="label" text-anchor="middle" fill="#fff">D3</text>
+  <circle cx="1084" cy="119" r="7" class="pin"/><text x="1084" y="92" class="label" text-anchor="middle" fill="#fff">D2</text>
+  <circle cx="790" cy="514" r="7" class="pin"/><text x="790" y="565" class="label" text-anchor="middle" fill="#fff">5V</text>
+  <circle cx="834" cy="514" r="7" class="pin"/><text x="834" y="565" class="label" text-anchor="middle" fill="#fff">GND</text>
+  <circle cx="958" cy="514" r="7" class="pin"/><text x="958" y="565" class="label" text-anchor="middle" fill="#fff">A0</text>
+
+  <!-- Potentiometer -->
+  <rect x="112" y="420" width="112" height="82" rx="10" fill="#d7d7d7" stroke="#666" stroke-width="3"/>
+  <circle cx="168" cy="461" r="28" fill="#4d4d4d"/>
+  <text x="168" y="530" class="small" text-anchor="middle">POT</text>
+  <circle cx="132" cy="420" r="6" fill="#333"/>
+  <circle cx="168" cy="420" r="6" fill="#333"/>
+  <circle cx="204" cy="420" r="6" fill="#333"/>
+
+  <!-- Jump button -->
+  <rect x="282" y="248" width="84" height="72" rx="8" fill="#dedede" stroke="#666" stroke-width="3"/>
+  <circle cx="324" cy="284" r="20" fill="#2187ff"/>
+  <text x="324" y="236" class="small" text-anchor="middle">JUMP</text>
+  <circle cx="294" cy="248" r="6" fill="#333"/>
+  <circle cx="354" cy="248" r="6" fill="#333"/>
+
+  <!-- Dash button -->
+  <rect x="410" y="248" width="84" height="72" rx="8" fill="#dedede" stroke="#666" stroke-width="3"/>
+  <circle cx="452" cy="284" r="20" fill="#8a4dff"/>
+  <text x="452" y="236" class="small" text-anchor="middle">DASH</text>
+  <circle cx="422" cy="248" r="6" fill="#333"/>
+  <circle cx="482" cy="248" r="6" fill="#333"/>
+
+  <!-- LED and resistor -->
+  <circle cx="505" cy="444" r="20" fill="#ffdf3d" stroke="#5e5e00" stroke-width="3"/>
+  <line x1="487" y1="468" x2="487" y2="508" stroke="#333" stroke-width="4"/>
+  <line x1="523" y1="468" x2="523" y2="508" stroke="#333" stroke-width="4"/>
+  <text x="505" y="532" class="small" text-anchor="middle">LED</text>
+  <rect x="436" y="427" width="48" height="16" fill="#d8b06a" stroke="#5f4621" stroke-width="2"/>
+  <text x="460" y="418" class="small" text-anchor="middle">220R</text>
+
+  <!-- Main wires from Arduino to breadboard -->
+  <path d="M790 514 L790 628 L112 628 L112 126" class="wire" stroke="#e50000"/>
+  <path d="M834 514 L834 642 L152 642 L152 166" class="wire" stroke="#111"/>
+  <path d="M958 514 L958 586 L168 586 L168 420" class="wire" stroke="#16a05f"/>
+  <path d="M1084 119 L1084 40 L294 40 L294 248" class="wire" stroke="#1e88ff"/>
+  <path d="M1040 119 L1040 54 L422 54 L422 248" class="wire" stroke="#8a4dff"/>
+  <path d="M864 119 L864 68 L460 68 L460 427" class="wire" stroke="#ff9800"/>
+
+  <!-- Short component wires on breadboard -->
+  <path d="M132 420 L132 126" class="thin" stroke="#e50000"/>
+  <path d="M204 420 L204 166" class="thin" stroke="#111"/>
+  <path d="M354 248 L354 166" class="thin" stroke="#111"/>
+  <path d="M482 248 L482 166" class="thin" stroke="#111"/>
+  <path d="M484 435 L505 435 L505 424" class="thin" stroke="#ff9800"/>
+  <path d="M523 508 L523 166" class="thin" stroke="#111"/>
+
+  <!-- Exact hookup labels -->
+  <text x="900" y="32" class="label" text-anchor="middle">D9 -> 220R -> LED+</text>
+  <text x="332" y="30" class="label" text-anchor="middle">D2 -> JUMP</text>
+  <text x="494" y="32" class="label" text-anchor="middle">D3 -> DASH</text>
+  <text x="198" y="612" class="label">A0 -> POT middle</text>
+  <text x="690" y="624" class="label" fill="#e50000">5V -> +</text>
+  <text x="770" y="656" class="label">GND -> -</text>
+</svg>
